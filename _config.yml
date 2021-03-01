@@ -1,0 +1,196 @@
+# Site
+repository: sproogen/resume-theme
+favicon: images/favicon.ico
+
+# Content configuration version
+version: 2
+
+# Personal info
+name: Cedric Lodts
+title: Software Developer
+email: cedric.lodts@gmail.com
+# website: www.github.com/sproogen/resume-theme
+
+# Dark Mode (true/false/never)
+darkmode: false
+
+# Social links
+# twitter_username: facespics
+github_username:  Cedric-L92
+# stackoverflow_username: "00000001"
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+# instagram_username: jameswgrant
+linkedin_username: cedric-lodts
+# xing_username: jekyll
+# pinterest_username: jekyll
+# youtube_username: globalmtb
+# googleplus_username: +jekyll
+# orcid_username: 0000-0000-0000-0000
+
+# Additional icon links
+# additional_links:
+#- title: itsgoingto.be
+#  icon: fas fa-globe
+#  url: https://www.itsgoingto.be
+# - title: another link
+#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
+#   url: Link url (eg. https://google.com)
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
+
+# About Section
+# about_title: About Me
+about_profile_image: images/profile.jpg
+about_content: | # this will include new lines to allow paragraphs
+  My name is Cedric Lodts and I'm a software developer with a master's degree in Computer Science. I currently live in Meerhout. My native language is Dutch.  
+  
+  A little bit about my job experience first.
+  My first job ended up being working for a start-up company. For my personal growth as a developer this meant I had to teach myself mostly.
+  
+  Due to rapidly changing business plans I did get into contact with a bunch of technologies but due to the nature of a little start-up company it meant occasionally going beyond what is generally asked of a software engineer (sometimes going as far as spending days repairing battery holders on electric bicycles and updating firmware).   
+  It certainly has been an interesting time but, in my personal opinion, means I still have to (and want to) learn a lot. Especially when working in teams. The little team I worked with (after more developers got hired) had a basic SCRUM methodology where we had a daily stand-up and ticketing system (JIRA) with short sprints.
+  
+  I am most skilled at C# (.NET) because of my experience in building back-end services/APIs in ASP.NET core but I enjoy learning and I will gladly teach myself any new technologies if the project requires it.
+
+content:
+  - title: Programming (and related) skills # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top-middle
+        description: | # this will include new lines to allow paragraphs
+          **Adept**: C# (ASP.NET Core web APIs/.NET 5)  
+          **Moderate**: HTML, CSS, JavaScript, SQL, Java, Git, ...  
+          **Basic**: Terraform, Python, TypeScript, Bash, ...  
+          **Beginner**: Angular, Android  
+          **Academic**: C, C++  
+
+          I also have experience with Microsoft Azure and its components.  
+          I have worked before with Azure Pipelines, event-hubs, iot-hubs, setting up a b2c-user management on AAD, redis, Azure Functions, ... (see projects below)
+
+  - title: Education # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: UHasselt
+        caption: 2010 - 2015
+        sub_title: Master Informatica (Computer Science)
+        description: | 
+          I studied at UHasselt where I got my master's degree in computer science for Human Computer Interaction (HCI).  
+          My master thesis can be found here: [http://hdl.handle.net/1942/19370](http://hdl.handle.net/1942/19370)
+          
+  - title: Experience # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: BOND Mobility
+        link: https://bond.info/
+        sub_title: (Junior) Software Developer
+        caption: October 2015 - October 2020
+        quote: >
+          Starting out as a little start-up company (KINGO/thesmartbikefactory/e-motionlabs) aimed at developing electric bikes with integrated guidance for tourism. The company eventually started focussing on smart solutions for electric vehicles before being acquired by BOND Mobility.
+        description: | # this will include new lines to allow paragraphs
+            I started out as the only developer for this little company where I had to learn to work autonomously in the beginning and teach myself in order to meet requirements for the projects.
+            Later on, other developers joined the company where I mostly was in charge of back-end development and helping design an Azure architecture needed for setting up an IoT-platform (along with handling Microsoft user accounts and basic tech support where needed in our little office).
+
+  - title: Projects # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top-middle
+        quote: >
+          I will list a description of a few projects I worked on here
+      - layout: top-middle
+        title: Azure IoT-communication
+        description: |
+          The little modules that were designed in-house at BOND mobility with microcontrollers were sending their data to an external IoT-provider at first but later on a decision came to move to Microsoft Azure services.
+          An architecture had to be developed to capture their data, store it and to send commands back to the modules.
+
+          Technologies used:  
+          - ASP.NET core
+          - Azure Web Service
+          - Azure Functions
+          - Azure IoT-hub
+          - Azure event-hub
+          - Azure Service Bus
+          - Azure Blob Storage
+          - ...
+          - CosmosDB
+
+
+      - layout: top-middle
+        title: IoT portal communication (API) for mobile assets (KINGO bikes + My.Bike modules)
+        description: |
+          "KINGO bikes" and "My.Bike modules" (smart IoT devices) were connected to an IoT-platform they sent their data to.  
+          This API was developed for easier management of these devices (e.g. remote locking/unlocking of an e-bike) and to create an interface that could be used by third-party customers.  
+          Customers (rental partners with a "fleet" of bicycles) would each get their own management web-portal login where they could see their assets and manage them (view statistics, battery load, location, lock/unlock, updates, ...).
+
+          Technologies used:  
+          - ASP.NET core
+          - Azure Active Directory
+          - Azure Web Service
+          - Azure Blob Storage
+          - Azure Key vault
+          - Azure ...
+          - Angular
+          - MS SQL
+          - ...
+
+      - layout: top-middle
+        title: Custom web-based route-planner
+        description: |
+          The goal of this project was to create an in-house route-planner (like you can do on Google Maps for example) tailored to drawing routes for tourism.  
+          Using data provided by OpenStreetMap through Itinero, routes could be generated based on factors favored for tourism (scenic, calm, ...) in stead of just the shortest route between two points.  
+          This was combined with a database filled with points of interest (POI) so people working on creating routes could "connect" a POI to a route and when this route gets uploaded to the Android device mounted on the e-bike it could display the route and POIs.
+          (This steering-wheel mounted tablet ran a custom Android app for guiding tourists while cycling)
+
+          Technologies used:  
+          - ASP.NET core (started out as NancyFx but later reworked)
+          - HTML/CSS/JavaScript
+          - AngularJS
+          - Leaflet
+          - OpenStreetMap
+          - Itinero
+          - PostgreSQL
+
+      - layout: top-middle
+        title: KINGO Explore app
+        description: |
+          KINGO tablets that ran on Android were mounted on the steering wheel of e-bikes. Tourists would use the KINGO Explore app to guide them.  
+          Most of the app was developed by other in-house developers or even an external partner. I would help where I could (as I was not familiar with Android) when time allowed it between other work.  
+          My biggest input for this application was developing a way for users to create their own route between cycle nodes (similar to "[fietsnet](https://www.fietsnet.be/routeplanner/default.aspx)").  
+          For this I had to download a WMS/WFS data-set of cycle node networks (in Belgium and The Netherlands), process it and load them in a usable format in a database to be able to route between any two points by using a path finding algorithm (A* in this case).
+
+          Technologies used:  
+          - Android
+          - SQLite
+
+      - layout: top-middle
+        title: Tourism content package repository (API + web-interface)
+        description: |
+          KINGO tablets that ran on Android were mounted on the steering wheel of e-bikes. When deployed at a certain location, they had to download a "content package" that had the touristic information of the region so they didn't require a constant internet connection.  
+          This project was setting up a package repository API so packages could be downloaded with a simple Android app and also provide a simple web-interface to upload new packages.  
+
+          Technologies used:  
+          - ASP.NET core
+          - HTML/CSS/JavaScript
+          - PostgreSQL
+
+
+# Footer
+footer_show_references: false
+# references_title: References on request (Override references text)
+
+# Build settings
+remote_theme: sproogen/resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
