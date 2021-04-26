@@ -93,7 +93,7 @@ content:
         sub_title: (Junior) Software Developer
         caption: October 2015 - October 2020
         quote: >
-          Starting out as a little start-up company (KINGO/thesmartbikefactory/e-motionlabs) aimed at developing electric bikes with integrated guidance for tourism. The company eventually started focussing on smart solutions for electric vehicles before being acquired by BOND Mobility.
+          Starting out as a little start-up company (KINGO/thesmartbikefactory/e-motionlabs) aimed at developing electric bikes with integrated guidance for tourism. The company eventually started focusing on smart solutions for electric vehicles before being acquired by BOND Mobility.
         description: | # this will include new lines to allow paragraphs
             I started out as the only developer for this little company where I had to learn to work autonomously in the beginning and teach myself in order to meet requirements for the projects.
             Later on, other developers joined the company where I mostly was in charge of back-end development and helping design an Azure architecture needed for setting up an IoT-platform (along with handling Microsoft user accounts and basic tech support where needed in our little office).
@@ -135,7 +135,6 @@ content:
           - Azure Web Service
           - Azure Blob Storage
           - Azure Key vault
-          - Azure ...
           - Angular
           - MS SQL
           - ...
@@ -144,7 +143,7 @@ content:
         title: Custom web-based route-planner
         description: |
           The goal of this project was to create an in-house route-planner (like you can do on Google Maps for example) tailored to drawing routes for tourism.  
-          Using data provided by OpenStreetMap through Itinero, routes could be generated based on factors favored for tourism (scenic, calm, ...) in stead of just the shortest route between two points.  
+          Using data provided by OpenStreetMap through Itinero, routes could be generated based on factors favored for tourism (scenic, calm, ...) instead of just the shortest route between two points.  
           This was combined with a database filled with points of interest (POI) so people working on creating routes could "connect" a POI to a route and when this route gets uploaded to the Android device mounted on the e-bike it could display the route and POIs.
           (This steering-wheel mounted tablet ran a custom Android app for guiding tourists while cycling)
 
