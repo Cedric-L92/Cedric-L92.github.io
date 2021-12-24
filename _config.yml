@@ -53,10 +53,11 @@ about_content: | # this will include new lines to allow paragraphs
   A little bit about my job experience first.
   My first job ended up being working for a start-up company. For my personal growth as a developer this meant I had to teach myself mostly.
   
-  Due to rapidly changing business plans I did get into contact with a bunch of technologies but due to the nature of a little start-up company it meant occasionally going beyond what is generally asked of a software engineer (sometimes going as far as spending days repairing battery holders on electric bicycles and updating firmware).   
-  It certainly has been an interesting time but, in my personal opinion, means I still have to (and want to) learn a lot. Especially when working in teams. The little team I worked with (after more developers got hired) had a basic SCRUM methodology where we had a daily stand-up and ticketing system (JIRA) with short sprints.
-  
-  I am most skilled at C# (.NET) because of my experience in building back-end services/APIs in ASP.NET core but I enjoy learning and I will gladly teach myself any new technologies if the project requires it.
+  Due to rapidly changing business plans I did get into contact with a bunch of technologies but due to the nature of a little start-up company it meant occasionally going beyond what is generally asked of a software engineer.   
+
+  I am currently employed at [Selligent](https://www.selligent.com) as a custom integration engineer.
+
+  I am most skilled at C# (.NET) but I enjoy learning and I will gladly teach myself any new technologies if the project requires it.
 
 content:
   - title: Programming (and related) skills # Title for the section
@@ -64,13 +65,13 @@ content:
     content:
       - layout: top-middle
         description: | # this will include new lines to allow paragraphs
-          **Adept**: C# (ASP.NET Core web APIs/.NET 5)  
+          **Adept**: C# (.NET)  
           **Moderate**: HTML, CSS, JavaScript, SQL, Java, Git, ...  
-          **Basic**: Terraform, Python, TypeScript, Bash, ...  
-          **Beginner**: Angular, Android  
+          **Basic**: Terraform, Python, TypeScript, ...  
+          **Beginner**: Angular, Android, Bash
           **Academic**: C, C++  
 
-          I also have experience with Microsoft Azure and its components.  
+          I also have some experience with Microsoft Azure and its components.  
           I have worked before with Azure Pipelines, event-hubs, iot-hubs, setting up a b2c-user management on AAD, redis, Azure Functions, ... (see projects below)
 
   - title: Education # Title for the section
@@ -97,6 +98,14 @@ content:
         description: | # this will include new lines to allow paragraphs
             I started out as the only developer for this little company where I had to learn to work autonomously in the beginning and teach myself in order to meet requirements for the projects.
             Later on, other developers joined the company where I mostly was in charge of back-end development and helping design an Azure architecture needed for setting up an IoT-platform (along with handling Microsoft user accounts and basic tech support where needed in our little office).
+      - layout: left
+        title: Selligent
+        link: https://www.selligent.com/
+        sub_title: Software Developer (Custom Integration Engineer)
+        caption: June 2021 - ...
+        description: | # this will include new lines to allow paragraphs
+            At Selligent, I started as a custom integration engineer where I get assigned to a large mixture of different projects requiring integrations between Selligent's existing platform and that of the client.
+
 
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
